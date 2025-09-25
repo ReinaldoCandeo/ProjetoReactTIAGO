@@ -1,4 +1,4 @@
-# React Native Navigation Example
+# ProjetoReactTIAGO - React Native Navigation Example
 
 Este projeto demonstra a implementação de **Drawer Navigation** e **Stack Navigation** no React Native, baseado no documento fornecido.
 
@@ -36,6 +36,12 @@ npm run ios
 npm run android
 ```
 
+4. **Para Web (Expo):**
+```bash
+cd NavigationWeb
+npm run web
+```
+
 ## 🛠 Dependências Utilizadas
 
 - `@react-navigation/native` - Navegação base
@@ -65,6 +71,8 @@ npm run android
 
 ```
 ├── App.js                 # Arquivo principal com ambas as navegações
+├── NavigationExample/     # Projeto React Native completo
+├── NavigationWeb/         # Projeto Expo para navegador
 ├── package.json          # Dependências do projeto
 └── README.md             # Documentação
 ```
@@ -97,3 +105,4 @@ Este projeto implementa exatamente os exemplos do documento:
 - ✅ Navegação entre diferentes tipos
 - ✅ Interface moderna e intuitiva
 - ✅ Código bem documentado
+- ✅ Projeto conectado ao GitHub
