@@ -1,108 +1,142 @@
-# ProjetoReactTIAGO - React Native Navigation Example
+# ProjetoReactTIAGO - React Native Navigation Examples
 
-Este projeto demonstra a implementação de **Drawer Navigation** e **Stack Navigation** no React Native, baseado no documento fornecido.
+Este repositório contém **quatro projetos** demonstrando diferentes tipos de navegação com React Navigation.
 
-## 🚀 Funcionalidades
+## 📁 Estrutura do Repositório
 
-### Stack Navigation
-- **Home Screen**: Tela inicial com botão para navegar para detalhes
-- **Details Screen**: Tela de detalhes que recebe parâmetros (productId)
-- **Profile Screen**: Tela de perfil do usuário
-- Navegação em pilha com botão de voltar automático
-- Passagem de parâmetros entre telas
+### **Projeto Principal** (Navegação Híbrida)
+- **Drawer + Stack Navigation**: Navegação híbrida combinada
+- **Telas**: Home, Details, Profile (Drawer) + Stack Navigator
+- **Localização**: Raiz do projeto
 
-### Drawer Navigation
-- **Menu lateral deslizante** com ícones
-- **Home (Drawer)**: Tela inicial do drawer
-- **Perfil (Drawer)**: Tela de perfil do drawer
-- **Stack Navigation**: Acesso ao Stack Navigator completo
-- Navegação entre diferentes seções do app
+### **Projeto 1** (Drawer Navigation)
+- **Navegação lateral**: Menu deslizante lateral
+- **Telas**: Home e Perfil
+- **Localização**: `/projeto1/`
+- **Características**: Menu hambúrguer, navegação lateral
 
-## 📦 Instalação
+### **Projeto 2** (Stack Navigation)
+- **Navegação em pilha**: Telas empilhadas com botão voltar
+- **Telas**: Home, Detalhes e Perfil
+- **Localização**: `/projeto2/`
+- **Características**: Passagem de parâmetros, navegação programática
 
-1. **Instalar dependências:**
+### **Projeto 3** (Listagem de Livros)
+- **Lista com FlatList**: Listagem de livros com scroll
+- **Telas**: Lista de Livros e Detalhes do Livro
+- **Localização**: `/projeto3/`
+- **Características**: FlatList, imagens, passagem de dados
+
+## 🚀 Como Executar
+
+### Projeto Principal (Navegação Híbrida)
 ```bash
 npm install
+npm run android  # ou npm run ios
 ```
 
-2. **Para iOS:**
+### Projeto 1 (Drawer Navigation)
 ```bash
-cd ios && pod install && cd ..
-npm run ios
+cd projeto1
+npm install
+npm run android  # ou npm run ios
 ```
 
-3. **Para Android:**
+### Projeto 2 (Stack Navigation)
 ```bash
-npm run android
+cd projeto2
+npm install
+npm run android  # ou npm run ios
 ```
 
-4. **Para Web (Expo):**
+### Projeto 3 (Listagem de Livros)
 ```bash
-cd NavigationWeb
-npm run web
+cd projeto3
+npm install
+npm run android  # ou npm run ios
 ```
 
-## 🛠 Dependências Utilizadas
+## 📱 Tipos de Navegação Implementados
 
-- `@react-navigation/native` - Navegação base
-- `@react-navigation/drawer` - Drawer Navigation
-- `@react-navigation/native-stack` - Stack Navigation
-- `react-native-screens` - Otimização de performance
-- `react-native-safe-area-context` - Área segura
-- `react-native-gesture-handler` - Gestos
-- `react-native-reanimated` - Animações
+### 1. **Drawer Navigation**
+- ✅ Menu lateral deslizante
+- ✅ Acesso por gesto ou ícone hambúrguer
+- ✅ Ideal para apps com muitas seções
+- ✅ Exemplo: Gmail (Caixa de entrada, Rascunhos, Enviados, etc.)
 
-## 📱 Como Usar
+### 2. **Stack Navigation**
+- ✅ Navegação em pilha com botão voltar
+- ✅ Passagem de parâmetros entre telas
+- ✅ Ideal para fluxos de detalhes
+- ✅ Exemplo: Navegador web (avançar/voltar)
 
-1. **Início**: O app abre com o Drawer Navigation
-2. **Menu Lateral**: Toque no ícone de hambúrguer (☰) ou deslize da lateral
-3. **Stack Navigation**: Acesse "Stack Navigation" no menu para ver o exemplo de navegação em pilha
-4. **Navegação**: Use os botões para navegar entre as telas
+### 3. **Navegação Híbrida**
+- ✅ Drawer contendo Stack Navigator
+- ✅ Combinação de diferentes tipos
+- ✅ Navegação complexa e flexível
+- ✅ Exemplo: Apps com múltiplas seções
 
-## 🎨 Características do Design
+### 4. **Listagem com FlatList**
+- ✅ Lista otimizada para performance
+- ✅ Scroll vertical com FlatList
+- ✅ Cards com design moderno
+- ✅ Navegação para detalhes
+- ✅ Exemplo: Lista de produtos, livros, etc.
 
-- **Cores modernas**: Paleta de cores atrativa
-- **Ícones no menu**: Emojis para melhor UX
-- **Headers personalizados**: Cores e estilos consistentes
-- **Botões estilizados**: Diferentes cores para diferentes ações
-- **Layout responsivo**: Centralizado e bem estruturado
+## 📦 Pacotes Utilizados
 
-## 📋 Estrutura do Projeto
+- `@react-navigation/native`: Base do React Navigation
+- `@react-navigation/drawer`: Navegação lateral
+- `@react-navigation/native-stack`: Navegação em pilha
+- `react-native-screens`: Performance de navegação
+- `react-native-safe-area-context`: Área segura
+- `react-native-gesture-handler`: Gestos
+- `react-native-reanimated`: Animações
+
+## 🎯 Objetivos Alcançados
+
+✅ **Quatro tipos de navegação** implementados
+✅ **Projetos separados** para cada tipo
+✅ **Documentação completa** para cada projeto
+✅ **Exemplos funcionais** com telas reais
+✅ **Estrutura organizada** e escalável
+✅ **FlatList com dados reais** (6 livros clássicos)
+✅ **Passagem de parâmetros** entre telas
+✅ **Design moderno** com cards e sombras
+
+## 📋 Estrutura Final do Projeto
 
 ```
-├── App.js                 # Arquivo principal com ambas as navegações
-├── NavigationExample/     # Projeto React Native completo
-├── NavigationWeb/         # Projeto Expo para navegador
-├── package.json          # Dependências do projeto
-└── README.md             # Documentação
+ProjetoReactTIAGO/
+├── App.js                    # Projeto principal (Navegação Híbrida)
+├── NavigationExample/        # Projeto React Native original
+├── NavigationWeb/           # Projeto Expo para navegador
+├── projeto1/                 # Drawer Navigation
+├── projeto2/                 # Stack Navigation
+├── projeto3/                 # Listagem de Livros
+├── package.json             # Dependências do projeto
+└── README.md               # Documentação
 ```
 
 ## 🔄 Fluxo de Navegação
 
-### Drawer Navigation
-- **Home (Drawer)** → **Stack Navigation** → **Home (Stack)**
+### Projeto Principal (Híbrido)
+- **Drawer** → **Stack Navigation** → **Home (Stack)**
 - **Perfil (Drawer)** → Navegação independente
 
-### Stack Navigation
-- **Home** → **Detalhes** (com parâmetro productId: 381)
-- **Detalhes** → **Perfil**
-- **Botão voltar** em todas as telas
+### Projeto 1 (Drawer)
+- **Home** ↔ **Perfil** (via menu lateral)
 
-## ✨ Exemplos de Uso
+### Projeto 2 (Stack)
+- **Home** → **Detalhes** → **Perfil** (com parâmetros)
 
-Este projeto implementa exatamente os exemplos do documento:
+### Projeto 3 (Listagem)
+- **Lista de Livros** → **Detalhes do Livro** (com dados do livro)
 
-1. **Drawer Navigation**: Menu lateral como no Gmail
-2. **Stack Navigation**: Navegação em pilha como no navegador
-3. **Passagem de parâmetros**: productId entre telas
-4. **Navegação híbrida**: Drawer contendo Stack Navigator
+## ✨ Características dos Projetos
 
-## 🎯 Objetivos Alcançados
-
-- ✅ Drawer Navigation funcional
-- ✅ Stack Navigation funcional  
-- ✅ Passagem de parâmetros
-- ✅ Navegação entre diferentes tipos
-- ✅ Interface moderna e intuitiva
-- ✅ Código bem documentado
-- ✅ Projeto conectado ao GitHub
+- **Design Moderno**: Cards com sombras e cores consistentes
+- **Navegação Intuitiva**: Botões e gestos naturais
+- **Performance**: Otimização com react-native-screens
+- **Responsivo**: Adaptável a diferentes tamanhos de tela
+- **Documentação**: README completo para cada projeto
